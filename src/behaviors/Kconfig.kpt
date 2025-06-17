@@ -1,0 +1,5 @@
+config ZMK_BEHAVIOR_KEY_PRESS_TO_LAYER
+    bool "key press to layer"
+    depends on ZMK_SPLIT_ROLE_CENTRAL
+    default y
+

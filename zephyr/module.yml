@@ -1,0 +1,6 @@
+name: key-press-to-layer
+build:
+  cmake: .
+  kconfig: src/behaviors/Kconfig.kpt
+  settings:
+    dts_root: .
