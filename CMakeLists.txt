@@ -1,3 +1,5 @@
+if(CONFIG_ZMK_BEHAVIOR_MOUSE_CLICK_BACK)
 zephyr_library()
-zephyr_library_sources_ifdef(CONFIG_ZMK_BEHAVIOR_MOUSE_CLICK_BACK src/behaviors/behavior_key_press_to_layer.c)
+zephyr_library_sources(src/behaviors/behavior_key_press_to_layer.c)
 zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
+endif()
